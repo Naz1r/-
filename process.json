@@ -1,0 +1,24 @@
+{
+  "apps" : [{
+    "name" : "example.com",
+    "script" : "/home/example.com/app.js",
+    "cwd" : "/home/example.com",
+    "error_file" : "/home/example.com/log/err.log",
+    "out_file" : "/home/example.com/log/out.log",
+    "node_args" : "--max-old-space-size=768",
+    "max_memory_restart" : "768M",
+    "watch" : true,
+    "ignore_watch" : [
+      "config",
+      "log",
+      "node_modules",
+      "themes/*/public",
+      "themes/.*",
+      ".*"
+    ],
+    "watch_options" : {
+      "followSymlinks": false
+    },
+    "vizion" : false
+  }]
+}
